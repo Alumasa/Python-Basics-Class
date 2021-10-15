@@ -20,11 +20,13 @@ class Student:
         Student.swa = swa
         Student.sci = sci
         Student.soc = soc
-        Student.total(self)
-        Student.average(self)
+        #Student.total(self)
+        #Student.average(self)
 
-    def total(self):
+    def get_total(self):
         self.total = self.math + self.eng + self.swa + self.sci + self.soc
+        return self.total
 
-    def average(self):
+    def get_average(self):
         self.average = self.total / 5
+        return self.average
